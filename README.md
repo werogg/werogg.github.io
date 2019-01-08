@@ -1,4 +1,4 @@
-# werogg.github.io
+# werogg.github.io / jotero.es
 *This is my own website where I show my skills, my habilities etc* <br/>
 
 You can access [here](https://jotero.es)
