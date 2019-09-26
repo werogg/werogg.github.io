@@ -2775,6 +2775,11 @@ input, select, textarea {
 			margin: 0 auto;
 		}
 
+		.wrapper > .portfolio_inner {
+			width: 80%;
+			margin: 0 auto;
+		}
+
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
@@ -3976,3 +3981,17 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+.column {
+    width: 500px;
+		border: 1px solid #1d242a;
+  	border-radius: 5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+}
+
+img.card-img-top {
+    width: 400px;
+    height: 228.16px;
+		margin-top: 20px;
+}
