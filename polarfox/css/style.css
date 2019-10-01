@@ -36,10 +36,25 @@ font-family: 'Open Sans', sans-serif;
 /* typography
 ==================================================*/
 
+@font-face {
+    font-family: 'resot'; /*a name to be used later*/
+    src: url('../fonts/resot.ttf'); /*URL to font*/
+}
+
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'resot';
     font-size: 80px;
     line-height: 70px;
+    color: white;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    color: white;
+    font-weight: 900;
+    font-size: 36px;
 }
 
 h4 {
@@ -249,14 +264,14 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #444;
+    color: white;
     font-size: 11px;
     font-weight: bold;
 }
 
 .bg-nav {
-    background: #fff;
-    border-bottom: 1px solid #f3f3f3
+    background: #505166;
+    border-bottom: 1px solid #292A39
 }
 
 .bg-nav ul {
@@ -269,12 +284,12 @@ a:focus {
 }
 
 a:hover {
-    color: #425BB5;
+    color: #858585;
     text-decoration: none;
 }
 
 a.active {
-    color: #425BB5;
+    color: #858585;
 }
 
 
