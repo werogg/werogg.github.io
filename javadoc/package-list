@@ -1,0 +1,17 @@
+ub.edu.controller
+ub.edu.model.client
+ub.edu.model.serie
+ub.edu.model.user
+ub.edu.resources.dao
+ub.edu.resources.dao.MOCK
+ub.edu.resources.service
+ub.edu.spec.episode
+ub.edu.spec.episode.rate
+ub.edu.spec.login.client
+ub.edu.spec.login.usuari
+ub.edu.spec.profile.modify
+ub.edu.spec.profile.view
+ub.edu.spec.register.client
+ub.edu.spec.register.usuari
+ub.edu.spec.series.details
+ub.edu.spec.series.list
