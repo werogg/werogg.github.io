@@ -1,6 +1,104 @@
 <html><head>
-<title>Real-time HTML Editor</title>
-<script type="text/javascript">
+  <head>
+      <title>Admin  | ESL Play</title>
+      <meta charset="utf-8" />
+  <meta http-equiv="x-dns-prefetch-control" content="on" />
+  <link rel="dns-prefetch" href="//cdn.eslgaming.com" />
+  <!--[if IE 9]>
+  <link rel="prefetch" href="//cdn.eslgaming.com" />
+  <![endif]-->
+  <link rel="icon" href="//cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/play_rebrand/dist/favicons/favicon.ico" type="image/x-icon" />
+  <meta name="robots" content="all" />
+  <link rel="shortlink" href="/admin_portal/281126/" />
+  <link rel="apple-touch-icon" href="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon.png" />
+  <meta http-equiv="cleartype" content="on" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta name="y_key" content="db1fa126d6f6884b" />
+  <meta name="language" content="en" />
+  <meta name="yandex-verification" content="7a281ca7deea57fc" />
+  <meta name="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+  <link rel="canonical" href="/admin_portal/281126/" />
+  <meta name="description" content="World leading platform for esports. Play CS:GO, LoL, CoD, FIFA, SC2, WoT and more against real opponents for prizes and cash." />
+  <meta name="keywords" content="esl, eslgaming, esports, electronic sports league, esports league, competitive gaming, esl one, intel extreme masters, esl open, esl major, esl pro, gaming, league, tournament, multiplayer, community, clan, forum, server, online, replay, demo, lol, league of legends, wot, world of tanks, cs, css, csgo, counter-strike global offensive, skill, hearthstone, cod, cod4, bo3, call of duty, black ops 3, ava, halo, crossfire, battlefield 4, bf4, heroes of the storm, battlefield hardline, smite, fifa, combat arms, starcraft 2, sc2, evolve, war rock, pokerth, magicka, mortal kombat x, mkx, esl tv, esl national championship, esl meisterschaft, esl mistrzostw polski, esl championnat national, esl uk premiership, esl nordic nationals, esl south east europe championship, esl национален шампионат, esl pro league, world championship series, wcs, wargming.net league, wgl, turtle entertainment" />
+  <meta name="copyright" content="Turtle Entertainment GmbH" />
+  <meta name="publisher" content="Turtle Entertainment GmbH" />
+  <meta name="programmer" content="Turtle Entertainment GmbH" />
+  <meta name="author" content="Turtle Entertainment GmbH" />
+  <meta property="og:image" content="https://cdn.eslgaming.com/misc/media/cm/logo/footer/esl_2019_horizontal.png" />
+  <meta name="bitly-verification" content="40238f85754d" />
+  <meta name="google-site-verification" content="IekuIdmml4ttb4f2rDr7n0Tu872TO_FcORTbBET7XQQ" />
+  <meta name="viewport" content="width=device-width" />
+      <style>
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.base.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.menus.theme.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.messages.theme.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.theme.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/modules/node/node.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/field/field.theme.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/views/css/views.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/user/user.base.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/user/user.theme.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/ckeditor/css/ckeditor.css?q2ce9r");
+  </style>
+  <link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/minified/jquery-ui.min.css" media="all" />
+  <style>
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/ctools/css/ctools.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/panels/css/panels.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/css/userBar.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/css/chatBar.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/css/fixes.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/legacy.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_cookie_guideline/css/te-cookie-guideline.css?q2ce9r");
+  </style>
+  <style>
+  @import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/eslgaming-play-base.styles.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/iconfont/esl-icons.css?q2ce9r");
+  @import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/play_rebrand/dist/styles/play_rebrand.css?q2ce9r");
+  </style>
+      <link href="https://cdn.eslgaming.com/misc/media/fonts/legend.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/misc/jquery.once.js?v=1.2"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/misc/drupal.js?q2ce9r"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/js/no-js.js?q2ce9r"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.min.js"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/libraries/momentjs/moment-with-locales.min.js?v=2.10.8"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/libraries/momentjs/moment-timezone-with-data.min.js?v=2.10.8"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/libraries/jstimezonedetect/jstz.min.js?v=1.0.4"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/angular-translate/angular-translate.js?v=2.7.0"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js?v=2.7.0"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/messageformat/messageformat.js?v=0.2.2"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/languagemapper/languageMapper.js?v=0.0.1"></script>
+  <script src="/translation/jsonp/en?v=da030ad82f6cde0b6111a95a5011db1f"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+  <script>var ESLuserID = 10588516, ESLteamID = [], navigation_url="", nav="/admin_portal/281126/";</script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/Clipboard.js?q2ce9r"></script>
+  <script>Drupal.settings.isDevelopment = false</script>
+  <script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/runtime.js?q2ce9r"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/polyfills.js?q2ce9r"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/main.js?q2ce9r"></script>
+  <script src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/js/dist/bundle.js"></script>
+  <script>var gfx_skin = 'https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base', gfx_static = 'https://cdn.eslgaming.com/play/eslstatic', gfx = 'https://cdn.eslgaming.com/play/eslgfx';</script>
+  <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/messageformat/locale/en.js?q2ce9r"></script>
+  <script>
+      window.originalMessageFormat = MessageFormat.locale.en;
+      MessageFormat.locale.en = function(n){return window.originalMessageFormat(Math.abs(n));};
+      </script>
+  <script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/scripts/main.js?q2ce9r"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/scripts/templates.js?q2ce9r"></script>
+  <script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/play_rebrand/dist/scripts/play_rebrand-templates.js?q2ce9r"></script>
+  <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","legacy_content":{"prefix":"play\/","esl_section":"","eslSectionPath":""},"user":{"id":"10588516","timezone":{"name":"Europe\/Madrid","short":"CET"},"geoIpCountry":"ES"},"eslapi_host":"https:\/\/api.eslgaming.com\/play\/v1"});</script>
+      <script>
+    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+    d.src='https://d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+    insertBefore(d,q)}(window,document,'script','_gs');
+
+    _gs('GSN-170878-B');
+  </script>
+<script type="text/javascript"></head>
 
 var editboxHTML =
 '<html class="expand close">' +
