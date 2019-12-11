@@ -147,6 +147,585 @@ var editboxHTML =
 var defaultStuff = '<h3>Welcome to the real-time HTML editor!<\/h3>\n' +
 '<p>Type HTML in the textarea above, and it will magically appear in the frame below.<\/p>';
 
+
+var eslcode = '
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html ng-csp class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html ng-csp class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!--><html ng-csp class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+<head>
+    <title>Admin  | ESL Play</title>
+    <meta charset="utf-8" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//cdn.eslgaming.com" />
+<!--[if IE 9]>
+<link rel="prefetch" href="//cdn.eslgaming.com" />
+<![endif]-->
+<link rel="icon" href="//cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/play_rebrand/dist/favicons/favicon.ico" type="image/x-icon" />
+<meta name="robots" content="all" />
+<link rel="shortlink" href="/admin_portal/281116/" />
+<link rel="apple-touch-icon" href="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon.png" />
+<meta http-equiv="cleartype" content="on" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+<meta name="y_key" content="db1fa126d6f6884b" />
+<meta name="language" content="en" />
+<meta name="yandex-verification" content="7a281ca7deea57fc" />
+<meta name="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+<link rel="canonical" href="/admin_portal/281116/" />
+<meta name="description" content="World leading platform for esports. Play CS:GO, LoL, CoD, FIFA, SC2, WoT and more against real opponents for prizes and cash." />
+<meta name="keywords" content="esl, eslgaming, esports, electronic sports league, esports league, competitive gaming, esl one, intel extreme masters, esl open, esl major, esl pro, gaming, league, tournament, multiplayer, community, clan, forum, server, online, replay, demo, lol, league of legends, wot, world of tanks, cs, css, csgo, counter-strike global offensive, skill, hearthstone, cod, cod4, bo3, call of duty, black ops 3, ava, halo, crossfire, battlefield 4, bf4, heroes of the storm, battlefield hardline, smite, fifa, combat arms, starcraft 2, sc2, evolve, war rock, pokerth, magicka, mortal kombat x, mkx, esl tv, esl national championship, esl meisterschaft, esl mistrzostw polski, esl championnat national, esl uk premiership, esl nordic nationals, esl south east europe championship, esl национален шампионат, esl pro league, world championship series, wcs, wargming.net league, wgl, turtle entertainment" />
+<meta name="copyright" content="Turtle Entertainment GmbH" />
+<meta name="publisher" content="Turtle Entertainment GmbH" />
+<meta name="programmer" content="Turtle Entertainment GmbH" />
+<meta name="author" content="Turtle Entertainment GmbH" />
+<meta property="og:image" content="https://cdn.eslgaming.com/misc/media/cm/logo/footer/esl_2019_horizontal.png" />
+<meta name="bitly-verification" content="40238f85754d" />
+<meta name="google-site-verification" content="IekuIdmml4ttb4f2rDr7n0Tu872TO_FcORTbBET7XQQ" />
+<meta name="viewport" content="width=device-width" />
+    <style>
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.base.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.menus.theme.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.messages.theme.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/system/system.theme.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/modules/node/node.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/field/field.theme.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/views/css/views.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/user/user.base.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/css/modules/user/user.theme.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/ckeditor/css/ckeditor.css?q2ce9r");
+</style>
+<link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/minified/jquery-ui.min.css" media="all" />
+<style>
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/ctools/css/ctools.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/panels/css/panels.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/css/userBar.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/css/chatBar.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/css/fixes.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/legacy.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_cookie_guideline/css/te-cookie-guideline.css?q2ce9r");
+</style>
+<style>
+@import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/eslgaming-play-base.styles.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/iconfont/esl-icons.css?q2ce9r");
+@import url("https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/play_rebrand/dist/styles/play_rebrand.css?q2ce9r");
+</style>
+    <link href="https://cdn.eslgaming.com/misc/media/fonts/legend.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/misc/jquery.once.js?v=1.2"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/misc/drupal.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/themes/omega/omega/js/no-js.js?q2ce9r"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.min.js"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/libraries/momentjs/moment-with-locales.min.js?v=2.10.8"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/libraries/momentjs/moment-timezone-with-data.min.js?v=2.10.8"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/libraries/jstimezonedetect/jstz.min.js?v=1.0.4"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/angular-translate/angular-translate.js?v=2.7.0"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js?v=2.7.0"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/messageformat/messageformat.js?v=0.2.2"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/languagemapper/languageMapper.js?v=0.0.1"></script>
+<script src="/translation/jsonp/en?v=da030ad82f6cde0b6111a95a5011db1f"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script>var ESLuserID = 10588516, ESLteamID = [], navigation_url="", nav="/admin_portal/281116/";</script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/Clipboard.js?q2ce9r"></script>
+<script>Drupal.settings.isDevelopment = false</script>
+<script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/runtime.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/polyfills.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/main.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/js/dist/bundle.js"></script>
+<script>var gfx_skin = 'https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base', gfx_static = 'https://cdn.eslgaming.com/play/eslstatic', gfx = 'https://cdn.eslgaming.com/play/eslgfx';</script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_translate/js/messageformat/locale/en.js?q2ce9r"></script>
+<script>
+    window.originalMessageFormat = MessageFormat.locale.en;
+    MessageFormat.locale.en = function(n){return window.originalMessageFormat(Math.abs(n));};
+    </script>
+<script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/scripts/main.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/scripts/templates.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/profiles/eslgaming_play/themes/eslgaming/play_rebrand/dist/scripts/play_rebrand-templates.js?q2ce9r"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","legacy_content":{"prefix":"play\/","esl_section":"","eslSectionPath":""},"user":{"id":"10588516","timezone":{"name":"Europe\/Madrid","short":"CET"},"geoIpCountry":"ES"},"eslapi_host":"https:\/\/api.eslgaming.com\/play\/v1"});</script>
+    <script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='https://d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('GSN-170878-B');
+</script></head>
+<body class="html not-front logged-in page-node page-node- page-node-1 node-type-legacy-content section-node">
+    <app-root></app-root>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCCT3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBCCT3');</script>
+<!-- End Google Tag Manager -->        <div class="l-networkbar">
+      <div class="l-region l-region--site-top">
+    <div id="block-te-networkbar-v2-networkbar-v2-block" class="block block--te-networkbar-v2 block--te-networkbar-v2-networkbar-v2-block">
+        <div class="block__content">
+    <script>NETWORKBAR_TITLE = "ESL Play"; NETWORKBAR_WIDTH= 1100;</script>
+<script src="https://cdn.eslgaming.com/misc/media/networkbar/networkbar.min.js"></script>
+  </div>
+</div>
+<div id="block-block-1045" class="block block--block block--block-1045">
+        <div class="block__content">
+    <style>
+.feedback-button {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: rotate(-90deg)  translateY(115%);
+    border-radius: 3px;
+    z-index: 200;
+
+    background: var(--psycho-yellow2);
+    color: var(--midnight-black);
+    padding: 6px 20px;
+}
+</style>
+
+<a class="feedback-button" href="https://www.surveymonkey.de/r/eslplayuserfeedback" target="_blank">
+Feedback
+</a>  </div>
+</div>
+  </div>
+</div>
+
+<a id="banner_background" class="banner">
+      <div class="l-region l-region--banner-background">
+    <style>
+    #banner_background {
+        background-image: url("https://cdn.eslgaming.com/misc/media/cm/2019/sitebranding/sitebranding-default.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+
+
+                    background-color: #e3e3e3            }
+
+    </style>
+
+<script>
+    (function(document) {
+        var branding = document.querySelector("#banner_background");
+
+
+            })(document);
+</script>  </div>
+</a>
+
+<div id="banner_artwork" class="banner">
+    </div>
+
+<div class="l-page">
+        <div id="dhtmltooltip"></div>
+
+    <div class="l-navigation-bar">
+        <div class="l-navigation-main">
+              <div class="l-region l-region--navigation-first">
+
+<a href="/user/home">
+    <svg class="te_breadcrumb__eslplay-logo" viewBox="0 0 185 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M123.52 33H126.67V25.53H131.035C134.905 25.53 138.505 22.83 138.505 17.385V13.155C138.505 7.89 134.905 5.19 131.035 5.19H123.52V33ZM135.355 17.205C135.355 20.76 132.97 22.515 130.81 22.515H126.67V8.205H130.81C132.97 8.205 135.355 9.915 135.355 13.47V17.205ZM142.856 33H146.006V5.19H142.856V33ZM162.19 26.205C162.19 28.815 160.48 30.345 157.96 30.345C155.935 30.345 153.955 29.31 153.955 25.53V19.77C153.955 15.99 155.935 14.955 157.96 14.955C160.48 14.955 162.19 16.485 162.19 19.095V26.205ZM165.34 33V12.3H162.64L162.19 13.83C160.21 12.075 158.59 12.075 157.51 12.075C154.045 12.075 150.805 13.56 150.805 19.32V25.98C150.805 31.74 154.045 33.225 157.51 33.225C158.59 33.225 160.21 33.225 162.19 31.47L162.64 33H165.34ZM176.891 40.02L184.226 12.3H181.121L176.756 28.5L171.986 12.3H168.791L175.316 33.945L173.741 40.02H176.891Z" fill="#1D1D1B"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M111.36 32.9513V26.4271H98.4105V4.92499H91.093V26.4275C91.093 30.0304 93.9597 32.9513 97.4957 32.9513H111.36Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M80.1134 15.9657H73.4913V11.4488H87.1251V4.92499H74.433C69.8717 4.92499 66.1738 8.69284 66.1738 13.3405C66.1738 17.9882 69.8717 21.756 74.433 21.756H81.131V26.4271H67.4969V32.9513H80.1134C84.7183 32.9513 88.4504 29.1466 88.4485 24.4549C88.4465 19.766 84.7152 15.9657 80.1134 15.9657Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.2544 26.4275C41.2544 30.0304 44.1211 32.9513 47.657 32.9513H63.266V26.4271H48.5719V21.7564H62.3017V15.9661H48.5719V11.4492H63.266V4.92499H47.6524C44.1187 4.92499 41.2544 7.84395 41.2544 11.4441V26.4275Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 19.1117C1 28.5621 8.51905 36.2231 17.7938 36.2231C27.0686 36.2231 34.5877 28.5621 34.5877 19.1117C34.5877 9.66139 27.0686 2 17.7938 2C8.51905 2 1 9.66139 1 19.1117Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79224 25.6C6.21599 26.4017 6.71368 27.157 7.27675 27.8552L26.6723 8.09255C24.4473 6.23103 21.6397 5.06733 18.5707 4.92499L5.79224 25.6ZM9.25109 29.8551C9.94178 30.4273 10.6873 30.9316 11.4796 31.3598L31.7028 18.3831C31.5802 15.2504 30.4514 12.3822 28.6353 10.1043L9.25109 29.8551ZM14.7495 32.614C23.5406 34.6072 30.1615 28.2721 31.404 21.9274L14.7495 32.614Z" fill="white"/>
+    </svg>
+    <svg class="te_breadcrumb__eslplay-logo te_breadcrumb__eslplay-logo--alt" style="display: none;" viewBox="0 0 141 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)" fill-rule="evenodd" clip-rule="evenodd">
+        <path d="M94.1105 25.1429h2.4v-5.6915h3.3257c2.9488 0 5.6918-2.0571 5.6918-6.2057v-3.2228c0-4.01147-2.743-6.06862-5.6918-6.06862h-5.7257V25.1429zm9.0175-12.0343c0 2.7085-1.818 4.0457-3.4632 4.0457h-3.1543V6.25143h3.1543c1.6452 0 3.4632 1.30286 3.4632 4.01147v2.8457zm5.715 12.0343h2.4V3.95428h-2.4V25.1429zm14.73-5.1772c0 1.9886-1.303 3.1543-3.223 3.1543-1.542 0-3.051-.7886-3.051-3.6686v-4.3885c0-2.88 1.509-3.6686 3.051-3.6686 1.92 0 3.223 1.1657 3.223 3.1543v5.4171zm2.4 5.1772V9.37143h-2.057l-.343 1.16567C122.065 9.2 120.83 9.2 120.008 9.2c-2.64 0-5.109 1.1314-5.109 5.52v5.0743c0 4.3886 2.469 5.52 5.109 5.52.822 0 2.057 0 3.565-1.3372l.343 1.1658h2.057zm8.801 5.3485l5.589-21.11997h-2.366l-3.326 12.34287-3.634-12.34287h-2.434l4.971 16.49147-1.2 4.6285h2.4zM74.2141 24.8407h10.6262v-4.8499h-9.925V4.0069h-5.6085v15.9842c0 2.6782 2.1971 4.8496 4.9073 4.8496zM67.3009 18.5249c-.0015-3.4856-2.8614-6.3106-6.3885-6.3106h-5.0755V8.85662h10.4496v-4.8496h-9.7278c-3.4961 0-6.3303 2.80088-6.3303 6.25578s2.8342 6.2558 6.3303 6.2558h5.1337v3.4723h-10.45v4.8499h9.67c3.5295 0 6.39-2.8283 6.3885-6.3159zM31.6149 19.9911c0 2.6782 2.1971 4.8496 4.9073 4.8496h11.9635v-4.8499H37.2234v-3.472h10.5233v-4.3044H37.2234V8.85679h11.2623V4.0069H36.5186c-2.7083 0-4.9037 2.16985-4.9037 4.84606V19.9911zM13.1698 1.74994C6.0611 1.74994.298096 7.44514.298096 14.4702c0 7.025 5.763004 12.7199 12.871704 12.7199s12.8717-5.6949 12.8717-12.7199c0-7.02506-5.763-12.72026-12.8717-12.72026z" fill="#fff"/>
+        <path d="M13.6575 4.04291L3.8634 19.412c.32479.5959.70625 1.1574 1.13781 1.6764L19.867 6.39756c-1.7054-1.38379-3.8572-2.24884-6.2095-2.35465zm7.7141 3.85014L6.51445 22.5751c.52938.4253 1.10082.8002 1.70805 1.1185l15.5001-9.6464c-.0939-2.3288-.9591-4.46089-2.351-6.15415zm2.122 8.78885l-12.7649 7.944c6.738 1.4817 11.8126-3.2276 12.7649-7.944z" fill="#000"/>
+      </g>
+      <defs><clipPath id="clip0"><path fill="#fff" d="M0 0h140.952v32H0z"/></clipPath></defs>
+    </svg>
+</a>
+                       <div id="block-te-breadcrumb-te-breadcrumb-main" class="block block--te-breadcrumb block--te-breadcrumb-te-breadcrumb-main">
+        <div class="block__content">
+    <div class="te_breadcrumb__wrapper">
+    <a href="/games" class="te_breadcrumb__games no-decoration">
+        <span class="te_breadcrumb__games__label">Games</span>
+    </a>
+    </div>
+  </div>
+</div>
+  </div>
+
+            <div class="userbox" id="user_container">
+                  <div class="l-region l-region--navigation-second">
+    <div id="block-te-user-userbox" class="block block--te-user block--te-user-userbox">
+        <div class="block__content">
+    <div id="userboxModule">
+    <userbox text-loading="'Loading'"></userbox>
+</div>
+  </div>
+</div>
+  </div>
+            </div>
+
+            <div class="helpbox" id="help_container">
+                <ul>
+                    <li>
+                        <a href="/help">Help</a>
+                    </li>
+                    <li>
+                        <a href="http://forum.eslgaming.com/" target="_blank">Forum</a>
+                    </li>
+                    <li>
+                        <a href="/search">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="banner_top" class="banner">
+            </div>
+
+    <div class="l-main">
+        <div class="l-main-inner">
+                        <div class="l-sidebar--first">
+                                  <aside class="l-region l-region--sidebar-first">
+    <div id="block-block-892" class="block block--block block--block-892">
+        <div class="block__content">
+    <style>
+
+.l-main {
+	background-color:rgba(255,255,255,.1)!important;
+}
+
+#banner_background {
+background-attachment: fixed;
+background-position: top center;
+background-size: auto;
+background-repeat: no-repeat;
+}
+
+.league--interaction>.header>.connector>.corner {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.league--interaction > .header > .connector {
+    height:44px!important;
+}
+
+</style>  </div>
+</div>
+  </aside>
+                <div id="banner_mpu" class="banner"></div>
+                            </div>
+            <div class="l-content" role="main">
+                  <div class="l-region l-region--content-head">
+    <div id="block-context-menu-contextmenu" class="block block--context-menu block--context-menu-contextmenu">
+        <div class="block__content">
+    &nbsp;  </div>
+</div>
+  </div>
+
+<article role="article" class="node node--legacy-content node--full node--legacy-content--full" ng-non-bindable>
+
+
+  <div class="node__content">
+    <div class="field field--name-body field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even"><div class="esl-content"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<table width="750" align="center" class="esl_blank">
+<tr><td colspan="4" align="right"><div class="TextM" style="margin-top:5px;margin-bottom:5px;">
+<img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/arrow_right_black.gif" width="9" height="7"><a href="/admin/">back</a>
+				</div></td></tr>
+<tr><td valign="top" align="left" colspan="2">
+<div class="TextM">
+<img src="https://cdn.eslgaming.com/play/eslgfx/nodelogo/play_small.gif" width="16" height="12" border="0"> <a class="TextP" href="/admin/">ESL Play</a>
+</div>
+<div style="color:#AC6060;margin-bottom:0px;"><b>This is an Admins-only news!</b></div>
+<div class="TitleNews" style="margin-top:5px;margin-bottom:20px;">ESL Winter Season 2019</div>
+</td></tr>
+<tr height="150"><td valign="top" width="100%" colspan="2">
+<div style="margin-bottom:10px;line-height:16px;" align="left">
+<a href="/admin_portal/281116/"><img src="https://cdn.eslgaming.com/play/eslgfx/news/teaser/281000/281116.png" width="150" height="90" align="right" border="0" style="margin-left:10px;margin-bottom:5px;"></a>Snow is falling, temperatures are going down. The Winter is coming! Time for a new ESL Season as well! You can decide weather running an Open League or a Seasonal Tournament or even both! Get prepared, work on a concept and run some winter tournaments in your game, edition and region!</div>
+<div style="margin-bottom:10px;line-height:16px;" align="left">Besides the normal Seasonal events there is the possibility to host a <b>X-Mas-Special-Cup</b>. The frame conditions can be found here in this separate <a href="https://play.eslgaming.com/admin_portal/281126/">News</a>.<br />
+<br />
+As always <b>every game, every edition and every region</b> is welcome running some Winter tournaments! Here is a short comparison between both concepts and all details on the upcoming season!<br />
+<br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Seasonal Tournaments & Open Leagues</b></h4><center><table width=600><tr style=background-color:#4099ff;><td width=30><b>Aspects</b></td><td width=200><b>Seasonal Tournament</b></td><td width=315><b>Open League</b></td></tr><tr style=background-color:#cfcfcf><td width=30><b>Mission</b></td><td width=215>free for all, flexible, everyone who wants to run a pure & simple seasonal event with nearly none restrictions</td><td width=295>free for all, pre-stage for the (semi-) professional tournaments, mandatory for all games with runner-up tournaments (e.g. Major League), other games are free to join</td></tr><tr style=background-color:#acacac;><td width=20><b>Mode</b> (AIM, 1on1, 6on6...)</td><td width=185>free to choose by the staff</td><td width=295>main game mode (according to Major-/ Pro-Mode; 1on1 or team)</td></tr><tr style=background-color:#cfcfcf><td width=20><b>Number</b> of events</td><td width=185><li>max. 2 per game per edition per region</li><li>1x 1on1 & 1x team</li><li>every game/edition section in every region can request & run seasonal tournaments</li><li>means there can be a <br><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/csgo_small.gif" width="16" height="16" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/de.gif" width="16" height="12" border="0"/> 5on5 Winter Cup,<br><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/csgo_small.gif" width="16" height="16" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/es.gif" width="16" height="12" border="0"/> 5on5 Winter Cup,<br><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/csgo_small.gif" width="16" height="16" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/pl.gif" width="16" height="12" border="0"/> 5on5 Winter Cup etc.</li></td><td width=295><li>only 1x per game per edition in the <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/xx.gif" width="16" height="12" border="0"/> global section</li><li>no regional events allowed! Exceptions for splitting the event into different regions (~continent, NA, EU, Asia...):</li><ul>a) server restrictions (e.g. country-restricted servers in WOT, LoL)<br>b) unacceptable ping/timezone-differences</li></ul><li>only the GSH/CM decides if there has to be a regional splitting! SHs can only give a recommendation!</li></td></tr><tr style=background-color:#acacac;><td width=20><b>Modus</b></td><td width=185>free to choose:<ul><li>but no 1-day events</li><li>Cups in double or single elimination</li><li> premierships with or without playoffs</li><li>Cup-Series</li><li>...</li></ul></td><td width=295>forced restrictions:<li>group stage followed by playoffs</li><li>group size depends on countries/signups</li><li>groups will be seeded by the respective admin team based on:</li><ul>a) the teams' nationalities<br>b) the teams' skill<br><img src="https://cdn.eslgaming.com/play/eslstatic/skins/default/content/arrow_right_black.gif" width="9" height="7" border="0"/> means, there will be groups for <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/de.gif" width="16" height="12" border="0"/>-, <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/fr.gif" width="16" height="12" border="0"/>-, <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/pl.gif" width="16" height="12" border="0"/>-,..., <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/es.gif" width="16" height="12" border="0"/>-only teams</ul><li>too less signups for a country to fill a group: mixed-country groups</li><li>same applies to EU/Global mixed teams where the country is not to specify</li><li>if detailed seeding = useless: only seed either by option a) or b)</li><li>last remedy: random seeds</li><li>Playoffs: preferred modes are bo3 or bo5, double elimination is not allowed</td></tr></table></center><br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Naming & URLs</b></h4><center><table class="esl_compact_zebra" style=" background-color:#F6f6f6; padding: 10px 15px; margin: 0 0 0 0; border-color:#0063ba; border-width:2px; border-spacing:2px; border-style:solid" width="450px"><tbody><tr><td><b>a) Seasonal Events</b><ul><li>[GAME] [MODE] [SEASON][Cup/League/Tourney/Series/...] [YEAR] [REGION]</li><li>Example: CS:GO 2on2 Winter Cup 2018 Europe</li><br><li>GAME/open/XX/SEASON-YEAR/</li><li>Example league: /csgo/open/league/winter-2018-europe</li><li>Example cup: /GAME/open/1on1-winter-cup-2018-europe</li></ul><b>b) Open Leagues</b><ul><li>[ESL] [GAME] [Open League] [SEASON] [YEAR] [REGION]</li><li>Example: ESL CS:GO Open League Winter 2018 Europe</li><li>Name extensions: ESL Game Open League = MUST, adding something like mode afterwards is also fine (example: ESL CS Open League 5on5... )</li><br><li>/GAME/open/league/SEASON-YEAR/groupstage-REGION/</li><li>Example: /csgo/open/league/winter-2018-groupstage-europe</li></ul></td></tr></tbody></table></center></center><br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Prizes</b></h4><center><table class="esl_compact_zebra" style=" background-color:#F6f6f6; padding: 10px 15px; margin: 0 0 0 0; border-color:#0063ba; border-width:2px; border-spacing:2px; border-style:solid" width="450px"><tbody><tr><td><li>60-30-14 <img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2007_base/content/16_premium.gif"> Premium-Prize-<a target="_blank" href="https://play.eslgaming.com/admin_portal/280519/">Package</a> for the Top 3 (at least 8 contestants)</li><li>Special-Award for the winner: min. 16 contestants</li><li> Additional prizes (Hardware/Publisher-Support etc.) may be distributed as well</li><b>Open Leagues</b><center><img src="https://cdn.eslgaming.com/misc/media/eu/cups/open_leagues_awards.png"></center><b>Seasonal Tournaments</b><center><img src="https://cdn.eslgaming.com/misc/media/eu/cups/awards_seasonal.png"></td></tr></tbody></table></center><br />
+<br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Procedures</b></h4><blockquote><b>Open Leagues</b><ul><li>If your game must host an Open League the first coordination actions take place between CM and the respective GSH</li><li>In any case the GSH gets his (regional) Staff Heads involved</li><li>After the frame conditions have been sorted the tournament is enrolled</li><li>Send in a <a target="_blank" href="https://play.eslgaming.com/support?squad=5904">support ticket to Cup Squad (Global)</a>, including all needed information (links, schedule...) &amp; possible exceptions which have been approved by your CM</li><li>After everything was checked for the last time by the Cup Squad you can announce &amp; start your tournament</li></ul><b>Seasonal Tournaments</b><ul><li>All seasonal tournaments must be approved by the Cup Squad beforehand!</li><li>Send in the request via <a target="_blank" href="https://play.eslgaming.com/support?squad=5904">support ticket to Cup Squad (Global)</a></li><li>The ticket must contain the following:</li><ul><li>Name, format, signup period + links, start date, unpublished newsposting</li><li>desired <a target="_blank" href="https://play.eslgaming.com/admin_portal/280519/">Prize-Packages</a></li></ul></ul></blockquote><br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Winter Schedule</b></h4>The following schedule is a rough orientation. There should not be any problem for the Seasonal Tournaments to follow those dates. There can be bigger discrepancies regarding the Open Leagues due to being dependent on Major-/Pro-Leagues. <ul><li>30th December: Requesting Deadline</li><li>Floating: Public Announcement News (Country-Portals/Global)</li><li>10th March: End of all Winter Events</li><li>1 Week of possible delays/season break (17th March; )</li></ul><br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Layouts, Tables, GFX</b></h4>Looking for some inspiration when writing the news? Then have a look into our little <b>News Construction Kit</b> which can be found in the <a href="https://play.eslgaming.com/intern/resources/staff-portal/" target="_blank"><b>Resources Portal</b></a>! Here are the respective GFX-Packs. <br><br />
+<b>Seasonal GFX Pack:</b><br />
+<img src="https://cdn.eslgaming.com/play/eslstatic/skins/default/content/arrow_right_black.gif" width="9" height="7" border="0"/> <a href="https://cdn.eslgaming.com/misc/media//play/cupsquad/seasonals/winter/teaser_winter.png">Teaser graphic</a><br />
+<img src="https://cdn.eslgaming.com/play/eslstatic/skins/default/content/arrow_right_black.gif" width="9" height="7" border="0"/> <a href="https://cdn.eslgaming.com/misc/media//play/cupsquad/seasonals/winter/newsbanner_winter.png">Banner 500x80</a><br />
+<img src="https://cdn.eslgaming.com/play/eslstatic/skins/default/content/arrow_right_black.gif" width="9" height="7" border="0"/> <a href="https://cdn.eslgaming.com/misc/media//play/cupsquad/seasonals/winter/promo_winter.png">Social</a><br><br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> Need help running your tournament?</h4><img src="https://cdn.eslgaming.com/misc/media/eu/gc/gameoperations-black-100.png" align="left" style="margin: 5px; margin-right: 10px" /> Got great ideas for this, but already a lot of plans? Can't you be available on certain dates and therefore can't host this cup? Want to provide players a nice time with this cup, but you don't have the staff to handle it?<br /><b>No worries!</b> The Game Operations squad can help you out! Create a <a target="_blank" href="http://staffwiki.esl.eu/index.php/GO_Help_request" target="_blank">help request</a> <strong>before announcing</strong> and they'll see if they can support your cup!<br><br><br><br><br />
+<h4><img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <b>Questions?</b></h4>Check out our <a href="https://play.eslgaming.com/intern/resources/staff-portal/">Staff-Portal</a>! In case of any problems, questions or whatever feel free to contact us via <a href="https://play.eslgaming.com/support/?s=5904">Support Ticket</a> or <a href="mailto:cups@staff.eslgamging.com">mail</a> us! We are here to help you during your events from planning to hosting and running! </div><div style="text-align: right"><strong>Your <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/flags/small/play.gif" width="16" height="12" border="0"/> <img src="https://cdn.eslgaming.com/play/eslgfx/gfx/nodelogo/cups_small.gif" width="16" height="16" border="0"/> <a href="https://play.eslgaming.com/team/5835291">Global Cup Squad</a></strong></div></div>
+<div style="margin-bottom:10px;" align="right" class="TextSP">wero, Wednesday, 04/12/19 16:03</div>
+<div class="TextS" align="left" style="margin-bottom:20px;margin-right:10px;">
+<span class="TextSP">491 Views (updated hourly)  </span><a class="TextS" href="/admin_news/delete/281116/">Delete</a> |
+						<a class="TextS" href="/admin_news/edit/281116/">Edit News</a>
+</div>
+</td></tr>
+<tr bgcolor="#EEEEEE"><td><table style="margin-top:3px;margin-bottom:3px;" class="esl_blank"><tr>
+<td width="80" valign="top"></td>
+<td><table class="esl_blank"></table></td>
+</tr></table></td></tr>
+</table><div id="comment_container">
+<table style="margin-top:20px;" cellspacing="0" cellpadding="0" border="0" align="center" width="NaN">
+<tr>
+<td width="12" height="12"><img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_nw.gif" width="12" height="12" border="0"></td>
+<td width="NaN - 20 - 24" height="12" background="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_hori_top.gif"><div style="margin-left:10px;"><table cellspacing="0" cellpadding="0" border="0"><tr><td bgcolor="#FFFFFF" class="borderTopic"><div style="margin-left:5px;margin-right:5px;">Write comment </div></td></tr></table></div></td>
+<td width="12" height="12"><img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_no.gif" width="12" height="12" border="0"></td>
+</tr>
+<tr>
+<td width="12" background="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_verti.gif"><img src="https://cdn.eslgaming.com/play/eslstatic/1pixel.gif" width="1" height="1"></td>
+<td valign="top" width="NaN - 20 - 24"><form method="post" action="/admin_portal/save_comment">
+<input name="parameter" value="281116" type="hidden"><input name="class" value="admin" type="hidden"><input type="hidden" name="checkkey" value="490b72fe544f8dd09dc042e2dd5a30e4"><table cellspacing="0" cellpadding="5" align="center">
+<tr><td colspan="3">
+<div class="FormTitle">Text</div>
+<textarea style="background-color:#F5F4F3;" name="body" cols="60" rows="15"></textarea>
+</td></tr>
+<tr><td colspan="3" align="center"><font><b></b></font></td></tr>
+<tr>
+<td width="33%" class="TextS">
+<input type="checkbox" name="showadmin">
+							 Admin ID</td>
+<td width="66%" colspan="2" align="center"><input width="100" height="22" border="0" type="image" src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/send.gif"></td>
+</tr>
+</table>
+</form></td>
+<td width="12" background="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_verti.gif"><img src="https://cdn.eslgaming.com/play/eslstatic/1pixel.gif" width="1" height="1"></td>
+</tr>
+<tr>
+<td width="12" height="12"><img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_sw.gif" width="12" height="12" border="0"></td>
+<td height="12" background="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_hori.gif"></td>
+<td width="12" height="12"><img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/border_so.gif" width="12" height="12" border="0"></td>
+</tr>
+</table>
+<br><table cellspacing="1" cellpadding="1" border="0" align="center" width="400">
+<tr bgcolor="#F5F4F3"><td class="TextS">b[<b>bold</b>]b</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">i[<i>italic</i>]i</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">u[<u>underlined</u>]u</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">-[<strike>stroke</strike>]-</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">Link: url[http://www.domain.com][put text here]url</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">quote[original author][quotation]quote</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">spoiler[hidden text]spoiler</td></tr>
+<tr bgcolor="#F5F4F3"><td class="TextS">mail[name@domain.com]mail</td></tr>
+</table>
+</div><div align="left" style="margin-top:10px;"><table cellspacing="0" cellpadding="0" border="0" align="center"><tr>
+<td align="right"></td>
+<td align="left"><div class="TextS" style="margin-right:5px;margin-left:5px;">
+<img src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/content/comment.gif" width="25" height="13" border="0"><a class="TextS" href="/admin/add_comment/281116/">Write comment</a>
+</div></td>
+<td><div class="TextS"><a class="TextS" href="/admin/add_comment/281116/?core=1#comments">Core Write comment</a></div></td>
+<td align="right"></td>
+<td align="left"><div class="TextS" style="margin-right:5px;margin-left:5px;"><a class="TextS" href="/admin/add_comment/281116/?admin=1#comments">Admin Write comment</a></div></td>
+</tr></table></div>
+
+<div style="clear: both;"></div>
+</div></div></div></div>  </div>
+
+    </article>
+                            </div>
+        </div>
+    </div>
+    <div id="banner_superbanner" class="banner"></div>
+
+    <footer class="l-footer" role="contentinfo">
+          <div class="l-region l-region--footer">
+    <div id="block-block-1015" class="block block--block block--block-1015">
+        <div class="block__content">
+    <style>.stats-box { display:none;} </style>  </div>
+</div>
+<div id="block-block-126" class="block block--block block--block-126">
+        <div class="block__content">
+    <div class="l-navigation-footer">
+        <div class="l-navigation-footer-inner">
+            <nav class="navigation-footer games">
+                <h4><div translate="sitemap:games"></div></h4>
+                <ul>
+                    <li><a href="/arenaofvalor/" title="Arena of Valor">Arena of Valor</a></li>
+                    <li><a href="/brawlstars/" title="Brawl Stars">Brawl Stars</a></li>
+                    <li><a href="/clashofclans/" title="Clash of Clans">Clash of Clans</a></li>
+                    <li><a href="/clashroyale/" title="Clash Royale">Clash Royale</a></li>
+                    <li><a href="/counterstrike/" title="Counter-Strike">Counter-Strike</a></li>
+                    <li><a href="/deadoralive/" title="Dead or Alive">Dead or Alive</a></li>
+                    <li><a href="/dota2/" title="Dota 2">Dota 2</a></li>
+                    <li><a href="/dotaunderlords/" title="Dota Underlords">Dota Underlords</a></li>
+                    <li><a href="/dragonball/" title="Dragon Ball">Dragon Ball</a></li>
+                    <li><a href="/fifa/" title="FIFA">FIFA</a></li>
+                    <li><a href="/forhonor/" title="For Honor">For Honor</a></li>
+                    <li><a href="/hearthstone/" title="Hearthstone">Hearthstone</a></li>
+                    <li><a href="/injustice/" title="Injustice">Injustice</a></li>
+                    <li><a href="/kurtzpel/" title="KurtzPel">KurtzPel</a></li>
+                    <li><a href="/leagueoflegends/" title="League of Legends">League of Legends</a></li>
+                    <li><a href="/madden/" title="Madden">Madden</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/mlbtheshow/" title="MLB The Show">MLB The Show</a></li>
+                    <li><a href="/moderncombat/" title="Modern Combat 5">Modern Combat 5</a></li>
+                    <li><a href="/mortalkombat/" title="Mortal Kombat">Mortal Kombat</a></li>
+                    <li><a href="/narutoshippuden/" title="Naruto Shippuden">Naruto Shippuden</a></li>
+                    <li><a href="/nba/" title="NBA 2K20">NBA 2K20</a></li>
+                    <li><a href="/paladins/" title="Paladins">Paladins</a></li>
+                    <li><a href="/playerunknownsbattlegrounds/" title="PlayerUnknowns Battlegrounds">PlayerUnknowns Battlegrounds</a></li>
+                    <li><a href="/rainbowsix/" title="Rainbow Six: Siege">Rainbow Six: Siege</a></li>
+                    <li><a href="/rocketleague/" title="Rocket League">Rocket League</a></li>
+                    <li><a href="/splatoon/" title="Splatoon 2">Splatoon 2</a></li>
+                    <li><a href="/starcraft/" title="StarCraft II">StarCraft II</a></li>
+                    <li><a href="/streetfighter/" title="Street Fighter">Street Fighter</a></li>
+                    <li><a href="/supersmashbros/" title="Super Smash Bros">Super Smash Bros</a></li>
+                    <li><a href="/tankionline/" title="Tanki Online">Tanki Online</a></li>
+                    <li><a href="/warcraft/global/" title="Warcraft 3">Warcraft 3</a></li>
+                    <li><a href="/zula/" title="Zula">Zula</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation-footer portals">
+                <h4><div translate="sitemap:regions"></div></h4>
+                <ul>
+                    <li><a href="/global/" title="Global">Global</a></li>
+                    <li><a href="/africa/" title="Africa">Africa</a></li>
+                    <li><a href="/asia/" title="Asia">Asia</a></li>
+                    <li><a href="/australia/" title="Australia">Australia</a></li>
+                    <li><a href="/benelux/" title="Benelux">Benelux</a></li>
+                    <li><a href="/brazil/" title="Brazil">Brazil</a></li>
+                    <li><a href="/czsk/" title="CIS">CZSK</a></li>
+                    <li><a href="/france/" title="France">France</a></li>
+                    <li><a href="/germany/" title="Germany">Germany</a></li>
+                    <li><a href="/hungary/" title="Hungary">Hungary</a></li>
+                    <li><a href="/italy/" title="Italy">Italy</a></li>
+                    <li><a href="/india/" title="India">India</a></li>
+                    <li><a href="/japan/" title="Japan">Japan</a></li>
+                    <li><a href="/latin-america/" title="Latin America">Latin America</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="/mena/" title="MENA">Middle East &amp; North Africa</a></li>
+                    <li><a href="/nordic/" title="Nordic">Nordic</a></li>
+                    <li><a href="/america/" title="North America">North America</a></li>
+                    <li><a href="/poland/" title="Poland">Poland</a></li>
+                    <li><a href="/portugal/" title="Portugal">Portugal</a></li>
+                    <li><a href="/cis/" title="CIS">Russia &amp; CIS</a></li>
+                    <li><a href="/southeast-asia/" title="Southeast Asia">Southeast Asia</a></li>
+                    <li><a href="/southeast-europe/" title="Southeast Europe">Southeast Europe</a></li>
+                    <li><a href="/spain/" title="Spain">Spain</a></li>
+                    <li><a href="/switzerland/" title="Swiss">Switzerland</a></li>
+                    <li><a href="/turkey/" title="Turkey">Turkey</a></li>
+                    <li><a href="/uk/" title="United Kingdom">United Kingdom</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation-footer social-media">
+                <h4><div translate="sitemap:social"></div></h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ESL" target="_blank">Facebook</a></li>
+                    <li><a href="https://forum.eslgaming.com/" target="_blank">Forum</a></li>
+                    <li><a href="/search/">Search</a></li>
+                    <li><a href="https://steamcommunity.com/groups/esl" target="_blank">Steam Community</a></li>
+                    <li><a href="https://www.twitch.tv/team/esl/" target="_blank">Twitch</a></li>
+                    <li><a href="https://twitter.com/ESL" target="_blank">Twitter</a></li>
+                    <li><a href="https://vk.com/esl" target="_blank">VK</a></li>
+                    <li><a href="https://www.youtube.com/user/esltv" target="_blank">YouTube</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation-footer site-links">
+                <h4><div translate="sitemap:about-us"></div></h4>
+                   <ul>
+                    <li><a href="https://aboutads.info/choices" target="_blank">Ad Choices</a></li>
+                    <li><a href="https://about.eslgaming.com/career/" target="_blank">Career</a></li>
+                    <li><a href="/anticheat/">ESL Anticheat</a></li>
+                    <li><a href="/trusted/" target="_blank">ESL Trusted</a></li>
+                    <li><a href="/premium/" target="_blank">ESL Premium</a></li>
+                    <li><a href="/play-app/" target="_blank">ESL Mobile App</a></li>
+                    <li><a href="/windows-10-app/" target="_blank">ESL Windows 10 App</a></li>
+                    <li><a href="/xbox-integration/" target="_blank">ESL Xbox Integration</a></li>
+                    <li><a href="/ps-dashboard/" target="_blank">PlayStation Dashboard</a></li>
+                    <li><a href="/impressum/">Impressum</a></li>
+                    <li><a href="/join-the-staff/">Join the Staff</a></li>
+                    <li><a href="/media/">Media</a></li>
+                    <li><a href="https://about.eslgaming.com/press-media/" target="_blank">Press</a></li>
+                    <li><a href="/contact/">Support</a></li>
+                    <li><a href="https://www.eslgaming.com/privacypolicy" target="_blank">Privacy policy</a></li>
+                    <li><a href="https://account.eslgaming.com/terms-of-use" target="_blank">Terms of use</a></li>
+                    <li><a href="/trusted-by/">Trusted by</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  </div>
+</div>
+<div id="block-block-993" class="block block--block block--block-993">
+        <div class="block__content">
+    <div class="l-footer-site-info">
+  <div class="l-footer-site-info-inner">
+    <img class="footer-site-logo" src="//cdn.eslgaming.com/misc/media/cm/logo/footer/esl_2019_horizontal.png" alt="">
+
+<!--    <img class="footer-site-logo--intel" src="//cdn-eslgaming.akamaized.net/play/drupal/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/images/powered_by_intel.png" alt=""> -->
+
+    <div class="footer-site-text">
+      <div translate="footer:blurb">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="l-footer-copyright" translate="footer:copyright">
+  </div>
+</div>
+  </div>
+    </footer>
+</div>
+<div id="banner_out_of_page" class="banner"></div>
+
+<div id="cookiebar" style="display: none;">
+    <div class="cookie-guideline-container">
+        <div class="cookie-notice cookie-guideline-info">
+            <div class="cookie-text-center">
+                <p>Cookies help us in providing our services. By using our services you agree that we set cookies.                    <a href="https://account.eslgaming.com/privacy-policy" target="_blank">More information</a>
+                    <button id="cookie-btn" class="btn btn-small cookie-btn">OK</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    jQuery(document).ready(function () {
+        jQuery('#cookie-btn').click(function () {
+            jQuery.cookie('_cp', 'true', { expires: 365 * 10, path: '/' });
+            jQuery('#cookiebar').fadeOut(250, function () {
+                jQuery(this).remove();
+            });
+        });
+        if (typeof jQuery.cookie != "undefined" && jQuery.cookie('_cp') == null) {
+            jQuery('#cookiebar').show();
+        }
+    });
+</script>
+    <script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teUtils.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teTexts.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teMatchManager.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teEventBroker.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teGroups.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teMatch.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teMatchChatTab.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teMatchChatWindow.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teMatchCategory.js?q2ce9r"></script>
+<script src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/js/jquery/plugins/countdown/stable/countdown.js"></script>
+<script src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/js/jquery/plugins/mousewheel/stable/mousewheel.js"></script>
+<script src="https://cdn.eslgaming.com/play/eslstatic/skins/v2008_base/js/lib/teNotification.js"></script>
+<script src="https://cdn.eslgaming.com/play/drupal/sites/all/modules/turtle_entertainment/te_chatbar/js/teFixes.js?q2ce9r"></script>
+<script>
+                if (typeof teRewrite === 'object') {
+                    teRewriteCore.prototype.currentUrl = function () {
+                        return window.location.protocol + '//' + window.location.host + '/play' + window.location.pathname + window.location.search;
+                    };
+                }</script>
+</body>
+</html>
+';
+
 // I don't want this stuff to appear in the box at the top because I feel it's likely to be distracting.
 var extraStuff = '<div style="position:absolute; margin:.3em; bottom:0em; right:0em;"><small>\n  Created by <a href="http://www.squarefree.com/" target="_top">Jesse Ruderman<\/a> and hosted by <a href="http://www.dreamhost.com/rewards.cgi?jesseruderman" target="_top">DreamHost<\/a>.\n<\/small><\/div>';
 
@@ -156,7 +735,7 @@ function init()
 {
   window.editbox.document.write(editboxHTML);
   window.editbox.document.close();
-  window.editbox.document.f.ta.value = defaultStuff;
+  window.editbox.document.f.ta.value = eslcode;
   update();
 }
 
